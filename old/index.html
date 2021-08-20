@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>[ Benjamin Rudshteyn, Columbia University]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+<!-- Bootstrap -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="../css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="../js/html5shiv.js"></script>
+<script src="../js/respond.min.js"></script>
+<![endif]-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/menucollapse.js"></script>
+<script type="text/javascript" src="../js/arrow78.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span><a href="#"><img border="0" src=""/></a></span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="#intro">Introduction</a></li>
+                        <li><a target="_blank" href="RudshteynCV_July31_2018.pdf">CV (PDF)</a></li>
+                    </ul>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#publications">Publications</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#awards">Awards</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-6-content').show();" href="#service">Service</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+        <!-- search box submenu -->
+        <div class="collapse" id="bs-example-navbar-collapse-2">
+            <gcse:search></gcse:search>
+        </div>
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section>
+    <!-- Place this tag where you want the search results to render -->
+    <gcse:searchresults-only></gcse:searchresults-only>
+</section>
+
+<!-- Home Section -->
+<section id="home" style="margin-top:40px">
+<div class="container">
+        <div align="left" class="col-md-3">
+                <img id="mobile-img" src="../images/ben.jpg" border="0" width="100%" height="100%" alt="">
+        </div>
+        <div align="left" class="col-md-4">
+            <h3>Benjamin Rudshteyn
+                <h5>Ph.D. Yale University, CT, USA</h5></h3>
+
+            <h4>Postdoctoral Research Scientist<br>
+            Department of Chemistry<br>
+            Columbia University<br>
+<br>
+            3000 Havemeyer Hall,
+	    New York, NY, 10027
+            <br>
+            Email:
+            <script language="JavaScript">
+                <!--
+                document.write("&nbsp;");
+                spiderjam('br2575','columbia.edu');
+                -->
+            </script><br/>
+            </h4>
+        </div>
+
+        <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+        <i class="expandshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+        </i>
+        <i class="collapseshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+        </i>
+
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="intro">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+            <!--<h2>Welcome!</h2>-->
+
+            <i class="noshow" style="display:none;" id="tab-1">
+            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-1-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-1-content">
+            <hr class="star-primary">
+
+            <p class="lead">
+            I am currently a Postdoctoral Research Scientist in <a target="_blank" href="https://friesner.chem.columbia.edu/">Richard Friesner's</a> group in the 
+            <a target="_blank" href="https://chem.columbia.edu/">Chemistry Department at Columbia University</a> 
+            using quantum Monte Carlo and localized orbital corrections to study biologically relevant systems.
+            I hold a B.S. degree in chemistry from Macaulay Honors College program at Brooklyn College/CUNY (2013), where I did research with
+             <a target="_blank" href="http://www.brooklyn.cuny.edu/web/academics/faculty/faculty_profile.jsp?faculty=576">Alexander Greer</a> 
+            and a Ph.D. in computational/physical chemistry 
+            from Yale University (2018), which I received in the group of <a target="_blank" href="http://ursula.chem.yale.edu/~batista/index.html">Victor Batista</a>.
+
+            </p>
+            <p>
+    Research Interests:
+    <ul>
+    <li>Computational chemistry</li>
+    <li>Physical organic chemistry</li>
+    <li>Solar fuels</li>
+    <li>Vibrational spectroscopy</li>
+    <li>Catalysis</li>
+    <li>Metalloproteins</li>
+    <li>Quantum Monte Carlo</li>
+    </ul>
+
+	    </p>
+	    <p>
+As an graduate student, I presented posters and/or PowerPoint presentations at the 2016 AFOSR MURI Annual Review Meeting at UC San Diego, 
+July 2016 Vibrational Spectroscopy Gordon Research Conference (invited speaker for Gordon Research Seminar), June 2016 Excited State Processes Conference, 
+April 2016 Connecticut Valley Quantum Chemistry meeting, March 2016 ACS meeting in San Diego, April 2017 ACS meeting in San Francisco, 
+July 2017 International Solar Fuels Conference, July 2017 American Conference of Theoretical Chemistry the 2017 DOE PI EFRC Meeting, 
+Yale Chemistry Symposia, Yale Energy Sciences Research in Progress Talks, and the weekly Yale Chemistry Solar Energy Collaboration meeting.
+
+As an undergraduate student, I presented posters and/or PowerPoint presentations at the Brooklyn College Science Day (2011, 2012, and 2013), 
+NYACS Undergraduate Research Symposia (2011, 2012, and 2013), Roald Hoffmann 75th birthday symposium (2012), Marie Curie Nobel Centennial Symposium (2011), 
+and the August 2012 ACS meeting in Philadelphia.
+	    </p>
+
+            <p>
+               <a href="RudshteynCV_July31_2018.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Research Section -->
+<section id="publications">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+            <h2>Publications <a href="https://scholar.google.com/citations?user=eZY_XBAAAAAJ&hl=en&oi=ao" class="btn btn-primary">Google Scholar&raquo;</a></h2>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Awards Section -->
+<section id="awards">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-1">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-5-content">
+
+            <hr class="star-primary">
+            <h2>Selected Awards <a href="cv.html#SECTION000120000000000000000" class="btn btn-primary">More &raquo;</a></h2>
+            <ul>
+                <li>
+                    <span class="label label-success">Goldwater '12</span> <a target="_blank" href="http://www.brooklyn.cuny.edu/web/news/bcnews/bcnews_120412.php">at Brooklyn College</a></span>
+                </li>
+                <li>
+                    <span class="label label-success">NSF Graduate Research Fellowship '15</span> <a target="_blank" href="https://chem.yale.edu/news/students-receive-2015-national-science-foundation-graduate-research-fellowship">at Yale University</a>.</span>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Section -->
+<section id="service">
+
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-6">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-6-content">
+
+           <hr class="star-primary">
+           <h2>Professional Service </h2>
+
+           <p>
+            <span class="label label-success">Journal and Magazine Referee</span>
+            <ul>
+                <li>
+                    <b>Journal Referee:</b>
+                    <a href="https://pubs.acs.org/journal/jpccck" target="_blank">Journal of Physical Chemistry C</a>
+                </li>
+
+            </ul>
+            </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="links">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-8">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-8-content">
+
+            <hr class="star-primary">
+            <h2>Links</h2>
+            <ul>
+                <li><span class="label label-success"><a target="_blank" href="https://www.linkedin.com/in/benjamin-rudshteyn-05856055"><font color="white">LinkedIn</font></a></span> </li>
+                <li><span class="label label-default"><a target="_blank" href="https://academictree.org/chemistry/tree.php?pid=79059"><font color="white">AcademicTree</font></a></span></li>
+                <li><span class="label label-info"><a target="_blank" href="https://yanis.sites.yale.edu/"><font color="white">YANIS: Russian Club at Yale</font></a></span> Former Co-President</li>
+                <li><span class="label label-danger"><a target="_blank" href="https://jst.chem.yale.edu/"><font color="white">Joint Safety Team at Yale Chemistry</font></a></span> Former Webmaster</li>
+                <li><span class="label label-primary"><a target="_blank" href="https://gsa.yale.edu/"><font color="white">Yale Graduate Student Assembly</font></a></span> Former Department Representative</li>
+                <li><span class="label label-warning"><a target="_blank" href="https://benjaminfranklin.yalecollege.yale.edu/"><font color="white">Benjamin Franklin College at Yale</font></a></span> 
+                 Former Graduate Fellow.</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="star-primary">
+<footer>
+    <small>
+    <center>
+        © 2018 | B. Rudshteyn. Credits: AR template
+    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="../images/ccby.png"/></a>
+    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence: 
+    <a href="https://github.com/dmsl/academic-responsive-template"_blank">
+        https://github.com/dmsl/academic-responsive-template
+    </a> ]
+    </div>
+    </center>
+    </small>
+</footer>
+
+</body>
+
+</html>
+v
