@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>[Benjamin Rudshteyn, Columbia University]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- <base href="http://www.columbia.edu/~br2575/"/> -->
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/menucollapse.js"></script>
+<script type="text/javascript" src="js/arrow78.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get  grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span><a href="#"><img border="0" src=""/></a></span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="#intro">Introduction</a></li>
+                        <li><a target="_blank" href="RudshteynResume_May21_2021_website.pdf">Resume (PDF)</a></li>
+                        <li><a target="_blank" href="RudshteynCV_May21_2021_website.pdf">CV (PDF)</a></li>
+                    </ul>			
+
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#publications">Publications</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#onlinecertifications">Online Certifications</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#awards">Awards</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-6-content').show();" href="#service">Service</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-6-content').show();" href="#links">Links and Volunteering</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+        <!-- search box submenu -->
+        <div class="collapse" id="bs-example-navbar-collapse-2">
+            <gcse:search></gcse:search>
+        </div>
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section>
+    <!-- Place this tag where you want the search results to render -->
+    <gcse:searchresults-only></gcse:searchresults-only>
+</section>
+
+<!-- Home Section -->
+<section id="home" style="margin-top:40px">
+    <div class="container">
+        <div class="col-md-3">
+            <img id="mobile-img" src="images/Rudshteyn_Headshot_2020.jpg" border="0" width="100%" height="100%" alt="">
+        </div>
+        <div class="col-md-9 text-left">
+            <h1>Benjamin Rudshteyn, PhD</h1>
+
+            <h3>Incoming Senior Scientist at Schr&#246;dinger and NIH F32 Postdoctoral Research Fellow in Computational Chemistry</h3>
+
+            <br/>
+
+            <h4>
+                Department of Chemistry<br>
+                Columbia University
+            </h4>
+
+            <br/>
+            
+            <h4>
+                3000 Havemeyer Hall<br/>
+                New York, NY 10027<br/>
+                <br/>
+                <script language="JavaScript">spiderjam('br2575','columbia.edu');</script>
+		<br/>
+                <script language="JavaScript">spiderjam('benjamin.rudshteyn','aya.yale.edu');</script>
+            </h4>
+            
+        </div>
+
+        <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+        <i class="expandshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+        </i>
+        <i class="collapseshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+        </i>
+
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="intro">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:20px" class="col-md-12">
+            <!--<h2>Welcome!</h2>-->
+
+            <i class="noshow" style="display:none;" id="tab-1">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-1-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-1-content">
+                
+                <hr class="star-primary">
+
+                <p class="lead">
+I am currently a NIH Postdoctoral Research Fellow in <a target="_blank" 
+href="https://friesner.chem.columbia.edu/">Richard Friesner's</a> group in the 
+<a target="_blank" href="https://chem.columbia.edu/">Chemistry Department at Columbia University</a> 
+using auxiliary field quantum Monte Carlo, complemented by density functional theory
+and coupled cluster theory to study model systems relevant to biology and materials science. 
+I am interested in traditional computational drug discovery methods and tools, particularly force fields,
+molecular dynamics, and both ligand and structure based drug design.
+In January 2020, I completed the online Introduction to Molecular Modeling 
+in Drug Discovery course provided by Schr&ouml;dinger. 
+In November 2020, I completed the course "Introduction to Molecular Modeling Concepts
+for Polymers" provided by Schr&ouml;dinger. 
+In May 2021, I have completed the High-Throughput Virtual Screening for Hit Finding 
+and Evaluation course provided by Schr&ouml;dinger.</p>
+		<p>
+		 I will be starting as a Senior Scientist in force fields at Schr&ouml;dinger in late August 2021.
+		</p>
+
+
+                <p>
+                    I hold a B.S. degree in chemistry from Macaulay Honors College program at Brooklyn College/CUNY (2013), where I did research with <a target="_blank" href="http://www.brooklyn.cuny.edu/web/academics/faculty/faculty_profile.jsp?faculty=576">Alexander Greer</a> and a Ph.D. in computational/physical chemistry from Yale University (2018), which I received in the group of <a target="_blank" href="http://ursula.chem.yale.edu/~batista/index.html">Victor Batista</a>.
+                </p>
+
+                <br/>
+                
+                <p>Research Interests:</p>
+                <ul>
+                    <li>Computational chemistry</li>
+                    <li>Physical organic chemistry</li>
+                    <li>Drug discovery</li>
+                    <li>Solar fuels</li>
+                    <li>Vibrational spectroscopy</li>
+                    <li>Catalysis</li> 
+                    <li>Metalloproteins</li>
+                    <li>Quantum Monte Carlo</li>
+                    <li>Polymers</li>
+                </ul>
+
+                <br/>
+
+                <p>As a postdoctoral research scientist/fellow, I presented posters and/or PowerPoint presentations at:</p>
+                <li> July 2020 Virtual Conference on Theoretical Chemistry </li>
+                <li> November 2019 Flatiron Institutes's Center for Computational Quantum Physics Quantum Monte Carlo Group Meeting </li>
+                <li> October 2019 Columbia University's Physical Chemistry Student Invited Seminar Series </li>
+                <li> October 2019 Yale University's Physical Chemistry Student Invited Seminar Series </li>
+                <li> October 2019 Columbia University Postdoctoral Research Symposium </li>
+                <li> September 2019 Alexander Greer 20th Anniversary Symposium at Brooklyn College </li>
+                <li> April 2019 New York Area Group for Informatics and Modeling (NYAGIM)-Mid-Atlantic Computational Chemistry (MACC) Symposium </li>
+                <li> March 2019 Columbia University's Physical Chemistry Student Invited Seminar Series </li>
+                <li> February 2019 Sanibel Symposium in St. Simon's Island in Georgia </li>
+                <li> December 2018 Columbia University Postdoctoral Research Symposium </li>
+                <li> September 2018 Columbia University's Physical Chemistry Student Invited Seminar Series </li>
+
+                <br/>
+
+                <p>As a graduate student, I presented posters and/or PowerPoint presentations at:</p>
+
+                <ul>
+                    <li>July 2017 International Solar Fuels Conference</li>
+                    <li>July 2017 American Conference of Theoretical Chemistry the 2017 DOE PI EFRC Meeting</li>
+                    <li>2016 AFOSR MURI Annual Review Meeting at UC San Diego</li>
+                    <li>July 2016 Vibrational Spectroscopy Gordon Research Conference (invited speaker for Gordon Research Seminar)</li>
+                    <li>June 2016 Excited State Processes Conference</li>
+                    <li>April 2016 Connecticut Valley Quantum Chemistry meeting</li>
+                    <li>March 2016 ACS meeting in San Diego, April 2017 ACS meeting in San Francisco</li>
+                    <li>Yale Chemistry Symposia, Yale Energy Sciences Research in Progress Talks, and the weekly Yale Chemistry Solar Energy Collaboration meeting. </li>
+                </ul>
+
+                <br/>
+
+                <p>As an undergraduate student, I presented posters and/or PowerPoint presentations at:</p>
+                <ul>
+                    <li>Brooklyn College Science Day (2011, 2012, and 2013)</li>
+                    <li>NYACS Undergraduate Research Symposia (2011, 2012, and 2013)</li>
+                    <li>Roald Hoffmann 75th birthday symposium (2012)</li>
+                    <li>August 2012 ACS meeting in Philadelphia.</li>
+                    <li>Marie Curie Nobel Centennial Symposium (2011)</li>
+                </ul>
+
+
+                <br/>
+
+                <p>
+                    <a href="RudshteynResume_May21_2021_website.pdf" class="btn btn-primary">View my Resume (PDF) &raquo;</a></p>
+                    <a href="RudshteynCV_May21_2021_website.pdf" class="btn btn-primary">View my CV (PDF) &raquo;</a></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Research Section -->
+<section id="publications">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+            <h2>Publications <a href="https://scholar.google.com/citations?user=eZY_XBAAAAAJ&hl=en&oi=ao" class="btn btn-primary">Google Scholar &raquo;</a></h2>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Online Certifications -->
+<section id="onlinecertifications">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+	    <h2>Online Certifications</h2>
+	    <a href="https://api.badgr.io/public/assertions/usHPTQJSTVe6PhSl1VGWuw?identity__email=br2575%40columbia.edu">
+            <img id="mobile-img" src="images/badge_drug_white.png" border="0" width="50%" height="50%" alt="">
+	    </a>
+	    <a href="https://api.badgr.io/public/assertions/Wzd2BZNDTYCSVhvEeyRcNw?identity__email=br2575%40columbia.edu">	
+            <img id="mobile-img" src="images/badge_polymer_white.png" border="0" width="50%" height="50%" alt="">
+	    </a>
+	    <a href="https://api.badgr.io/public/assertions/jM3XxR9AT4WiLUrmL_rrtg?identity__email=br2575%40columbia.edu">	
+            <img id="mobile-img" src="images/badge_HTVS_white.png" border="0" width="60%" height="50%" alt="">
+	    </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Awards Section -->
+<section id="awards">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-1">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-5-content">
+
+            <hr class="star-primary">
+            <h2>Selected Awards <!-- <a href="cv.html#SECTION000120000000000000000" class="btn btn-primary">More &raquo;</a> -->  </h2>
+            <ul>
+                <li> <span class="label label-success">NIH F32 Ruth L. Kirschstein NRSA Postdoctoral Research Fellowship '20</span> <a target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9911383&icde=48587550&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC&pball=">
+                  at Columbia University</a>.</span>
+		</li>     
+                <li>
+                    <span class="label label-success">NSF Graduate Research Fellowship '15</span> <a target="_blank" href="https://chem.yale.edu/news/students-receive-2015-national-science-foundation-graduate-research-fellowship">
+                    at Yale University</a>.</span>
+                </li>
+
+                <li>
+                    <span class="label label-success">Goldwater '12</span> <a target="_blank" href="http://www.brooklyn.cuny.edu/web/news/bcnews/bcnews_120412.php">
+                     at Brooklyn College</a></span>
+                </li>
+
+
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Section -->
+<section id="service">
+
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-6">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-6-content">
+
+           <hr class="star-primary">
+           <h2>Professional Service </h2>
+
+           <p>
+            <span class="label label-success">Journal and Magazine Referee</span>
+            <ul>
+                <li>
+                    <b>Journal Referee:</b>
+		    <ul>
+                    <li> <a href="https://pubs.acs.org/journal/jpccck" target="_blank">Journal of Physical Chemistry C</a> </li>
+                    <li> <a href="https://www.mdpi.com/journal/molecules" target="_blank">Molecules</a> </li>
+                    <li> <a href="https://www.mdpi.com/journal/computation" target="_blank">Computation</a> </li>
+                    <li> <a href="https://www.mdpi.com/journal/nanomaterials" target="_blank">Nanomaterials</a> </li>
+                    <li> <a href="https://www.tandfonline.com/loi/gmos20" target="_blank">Molecular Simulation</a> </li>
+		    </ul>
+                </li>
+
+            </ul>
+            </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="links">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-8">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Links <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-8-content">
+
+            <hr class="star-primary">
+            <h2>Links and Volunteer Activities</h2>
+            <ul>
+                <li><span class="label label-default"><a target="_blank" href="https://www.linkedin.com/in/benjamin-rudshteyn-ph-d-05856055"><font color="white">LinkedIn</font></a></span> </li>
+                <li><span class="label label-default"><a target="_blank" href="https://academictree.org/chemistry/tree.php?pid=79059"><font color="white">AcademicTree</font></a></span></li>
+                <li><span class="label label-info"><a target="_blank" href="https://concernedscientists.org/"><font color="white">Committee of Concerned Scientists</font></a></span> Council of Youth Scholars Member</li>
+                <li><span class="label label-primary"><a target="_blank" href="https://postdocsociety.columbia.edu/people/benjamin-rudshteyn"><font color="white">Columbia University Postdoctoral Society</font></a></span> President for Morningside/Lamont</li>
+                <li><span class="label label-warning"><a target="_blank" href="https://www.societyforscience.org//"><font color="white">
+Regeneron International Science and Engineering Fair</font></a></span> Judge </li>
+                <li><span class="label label-warning"><a target="_blank" href="https://k16.cuny.edu/nycsef/"><font color="white">NYC Science and Engineering Fair</font></a></span> Judge </li>
+                <li><span class="label label-warning"><a target="_blank" href="http://midwoodscience.org/science-fair.shtml"><font color="white">Midwood High School Science Fair</font></a></span> Judge </li>
+                <li><span class="label label-primary"><a target="_blank" href="http://senate.columbia.edu/committeepages/researchers_folder/researchers.html"><font color="white">Columbia University Senate</font></a></span>Former Senator for Postdocs</li>
+                <li><span class="label label-success"><a target="_blank" href="https://columbia.learningu.org/teach/teachers/br2575/bio.html"><font color="white">Columbia Splash/Rainstorm</font></a></span>Former Instructor of Chemistry and Career Courses</li>
+                <li><span class="label label-success"><a target="_blank" href="https://www.wavelf.org/"><font color="white">Wave Learning Festival</font></a></span>Former Instructor of Chemistry and Career Courses</li>
+                <li><span class="label label-success"><a target="_blank" href="https://outreach.engineering.columbia.edu/content/eng-engineering-next-generation"><font color="white">Columbia Engineering the Next Generation</font></a></span>Former Instructor of Research Basics Courses</li>
+                <li><span class="label label-danger"><a target="_blank" href="https://columbiacovid.weebly.com/"><font color="white">Columbia Researchers Against COVID-19</font></a></span> Former Project 8 Database Team Member</li>
+                <li><span class="label label-success"><a target="_blank" href="https://yale.learningu.org/teach/teachers/benrd/bio.html"><font color="white">Yale Splash</font></a></span>Former Instructor of Chemistry and Ethics Courses</li>
+                <li><span class="label label-info"><a target="_blank" href="https://yanis.sites.yale.edu/"><font color="white">YANIS: Russian Club at Yale</font></a></span> Former Co-President</li>
+                <li><span class="label label-danger"><a target="_blank" href="https://jst.chem.yale.edu/"><font color="white">Joint Safety Team at Yale Chemistry</font></a></span> Former Webmaster</li>
+                <li><span class="label label-primary"><a target="_blank" href="https://gsa.yale.edu/"><font color="white">Yale Graduate Student Assembly</font></a></span> Former Department Representative</li>
+                <li><span class="label label-warning"><a target="_blank" href="https://www.nhsciencefair.org/"><font color="white">New Haven Science Fair</font></a></span> Former Judge and Team Leader</li>
+                <li><span class="label label-warning"><a target="_blank" href="https://www.acs.org/"><font color="white">ACS National Meeting Undergraduate Poster Session</font></a></span> Former Judge</li>
+                <li><span class="label label-success"><a target="_blank" href="https://benjaminfranklin.yalecollege.yale.edu/"><font color="white">Benjamin Franklin College at Yale</font></a></span> 
+                 Former Graduate Fellow</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="star-primary">
+
+<footer>
+    <small>
+    <center>
+        &copy; 2018 | B. Rudshteyn. Credits: AR template
+        <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+        <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence: 
+            <a href="https://github.com/dmsl/academic-responsive-template"_blank">
+                https://github.com/dmsl/academic-responsive-template
+            </a> ]
+        </div>
+    </center>
+    </small>
+</footer>
+
+<script type="text/javascript">
+    window.doorbellOptions = {
+        "id": "11525",
+        "appKey": "ryGnAwnuEPHzh45RtmI2UV7kfi5uRz2IFK9I8HRxHDPO6EXq12349BSdhreeoFix"
+    };
+    (function(w, d, t) {
+        var hasLoaded = false;
+        function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/'+window.doorbellOptions['id']+'?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+        if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+        if (d.readyState == 'complete') { l(); }
+    }(window, document, 'script'));
+</script>
+
+</body>
+
+</html>
